@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Calendar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="calendar_container">
+        <div id="month_header">
+            <button id="prev_month">&lt;</button>
+            <select name="month_selector" id="month_selector">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <select name="year_selector" id="year_selector">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+            </select>
+            <button id="next_month">&gt;</button>
+        </div>
+        <div id="day_labels">
+            <div class="day_label">Sun</div>
+            <div class="day_label">Mon</div>
+            <div class="day_label">Tue</div>
+            <div class="day_label">Wed</div>
+            <div class="day_label">Thu</div>
+            <div class="day_label">Fri</div>
+            <div class="day_label">Sat</div>
+        </div>
+        <div id="month_container">
+
+        </div>
+    </div>
+</body>
+</html>
