@@ -30,3 +30,13 @@
     font-weight: bold;
     background-color: #f0f0f0;
 }
+#month_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.prev-month, .next-month {
+    background-color: #f0f0f0;
+}
+.calendar-day {
+    aspect-ratio: 1/1;
+}
