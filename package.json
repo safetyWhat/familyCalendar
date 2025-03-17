@@ -1,0 +1,18 @@
+{
+  "name": "familycalendar",
+  "version": "1.0.0",
+  "description": "A calendar app to schedule and plan activities with all members of the family.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.2.2"
+  }
+}
