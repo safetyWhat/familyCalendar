@@ -1,8 +1,18 @@
+:root {
+    --dark-text-color: #002500;
+    --light-text-color: #929292;
+    --dark-background-color: #002500;
+    --light-background-color: #929982;
+    --alt-dark-color: #653239;
+    --accent-color: #E16036;
+    --alt-accent-color: #4f759b;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid 1px red; */
+    /* border: solid 1px --accent-color; */
 }
 #calendar_container {
     position: absolute;
@@ -10,45 +20,51 @@
     width: 80vw;
 }
 #month_header {
+    border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: var(--alt-dark-color);
+    
 }
 #month_selector, #year_selector {
     height: 50px;
     font-size: 2rem;
-    background-color: #f0f0f0;
+    background-color: var(--alt-dark-color);
+    color: var(--light-text-color);
 }
 #day_labels {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: .5rem;
-    padding: .25rem;
+    gap: .25rem;
 }
-#day_labels div {
+
+.day_label {
     text-align: center;
     font-weight: bold;
-    background-color: #f0f0f0;
-}
-.day_label {
+    background-color: var(--alt-dark-color);
     border-radius: .5rem;
+    color: var(--light-text-color);
+    padding: .25rem;
+    margin: .25rem 0 .25rem 0;
 }
 #month_container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: .5rem;
+    gap: .25rem;
 }
 .prev-month, .next-month {
-    background-color: #f0f0f0;
+    background-color: var(--light-background-color);
+    color: var(--dark-text-color);
 }
 .calendar-day {
     aspect-ratio: 1/1;
-    border: solid 1px #000;
+    border: solid 1px var(--dark-background-color);
     border-radius: .5rem;
 }
 .calendar-day > span {
     display: block;
     padding: .25rem;
+    color: var(--dark-text-color);
 }
