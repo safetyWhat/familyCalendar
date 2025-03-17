@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 #calendar_container {
     position: absolute;
@@ -24,19 +24,31 @@
 #day_labels {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: .5rem;
+    padding: .25rem;
 }
 #day_labels div {
     text-align: center;
     font-weight: bold;
     background-color: #f0f0f0;
 }
+.day_label {
+    border-radius: .5rem;
+}
 #month_container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: .5rem;
 }
 .prev-month, .next-month {
     background-color: #f0f0f0;
 }
 .calendar-day {
     aspect-ratio: 1/1;
+    border: solid 1px #000;
+    border-radius: .5rem;
+}
+.calendar-day > span {
+    display: block;
+    padding: .25rem;
 }
